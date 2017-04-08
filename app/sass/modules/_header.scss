@@ -68,6 +68,72 @@
   padding:15px 0px 0px 15px;
   width:60px;
 }
+.content{
+  height:180px;
+  padding: 44px 0px 0px 120px;
+}
+
+.content__title{
+  font-size:32px;
+  letter-spacing: -1px;
+}
+.content__search{
+  margin-top: 45px;
+  display: flex;
+  width: 100%;
+  height:100px;
+}
+.choose__city {
+  width: 40%;
+  &_select:hover {
+    cursor: pointer;
+  }
+  &_select_wrapper{
+    width:346px;
+    height:42px;
+    margin-top: 11px;
+    position: relative;
+  }
+  &_select_wrapper:after{
+    content: url("../../images/selectArrow.png");
+    //-webkit-transform: rotate(90deg);
+    //-moz-transform: rotate(90deg);
+    //-ms-transform: rotate(90deg);
+    //transform: rotate(90deg);
+    right: 17px;
+    top: 11px;
+    position: absolute;
+    pointer-events: none;
+  }
+  &_select_wrapper:focus{
+    content: url("../../images/selectArrow.png");
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    right: 17px;
+    top: 11px;
+    position: absolute;
+    pointer-events: none;
+  }
+  &_select{
+    width:346px;
+    height:$heightOfSelect;
+    border-radius: 4px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 2px solid #dfe3e6;
+    padding-left: 17px;
+    font: $font;
+    font-size: 14px;
+  }
+}
+
+.city_select_option{
+  width:346px;
+  height:42px;
+}
+
 
 
 
