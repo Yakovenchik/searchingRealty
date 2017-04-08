@@ -1,4 +1,19 @@
-@import "../utilities/_index.scss";
+@import "../utilities/_index";
 body{
-  font-family: $font, sans-serif;
+  font-family: "Open Sans", sans-serif;
+  background-color: RGBA(90, 104, 114, .08);
+}
+.page{
+  width:1200px;
+  margin:0 auto;
+}
+.underline:hover{
+  border-bottom:2px solid #FFFFFF;
+}
+a{
+  text-decoration: none;
+}
+.button{
+  border:0;
+  height: 40px;
 }

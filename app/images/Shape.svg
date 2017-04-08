@@ -2,7 +2,7 @@
 <title>Shape</title>
 <desc>Created using Figma</desc>
 <g id="Canvas" transform="translate(467 1140)" figma:type="canvas">
-<g id="Shape" figma:type="vector-operation">
+<g id="Shape" figma:type="vector">
 <use xlink:href="#path0_fill" transform="translate(-467 -1140)" fill="#FFFFFF"/>
 </g>
 </g>
