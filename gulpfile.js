@@ -40,7 +40,13 @@ gulp.task('css-libs', ['sass'], function() {
         .pipe(gulp.dest('app/css')); // Выгружаем в папку app/css
 });
 
-gulp.task('watch', ['browser-sync','css-libs', 'sass'], function() {
+
+//убрал с watch сss-libs!!!
+
+
+
+
+gulp.task('watch', ['browser-sync', 'sass'], function() {
     gulp.watch('app/sass/**/*.scss', ['sass']); // Наблюдение за sass файлами в папке sass
     gulp.watch('app/*.html', browserSync.reload); // Наблюдение за HTML файлами в корне проекта
 });
