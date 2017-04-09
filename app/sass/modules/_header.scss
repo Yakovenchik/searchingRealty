@@ -138,7 +138,44 @@
   height:100px;
   width:248px;
 }
+.choose__rooms-amount{
+  margin-top: 20px;
+  width:248px;
+  height: 60%;
+  display: flex;
+  & input[type="radio"]{
+    display: none;
+  }
+  & input[type="radio"]+label{
+    position: relative;
+    margin-right: 40px;
+  }
+  & input[type="radio"]+label:before {
+    //display: flex;
+    content: "";
+    background-color: darkred;
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+    position: absolute;
+  }
 
+  //& input[id="radio1"]+label:before{
+  //  content:"1";
+  //}
+  //& input[id="radio1"]+label:before{
+  //  content:"2";
+  //}
+  //& input[id="radio1"]+label:before{
+  //  content:"3";
+  //}
+  //& input[id="radio1"]+label:before{
+  //  content:"4";
+  //}
+  //& input[id="radio1"]+label:before{
+  //  content:"5+";
+  //}
+}
 
 
 
@@ -149,8 +186,14 @@
   color:#30ae63;
   margin:28px 0px 0px 64px;
   padding: 10px 0px 0px 30px;
+  border-radius: 2px;
+  border: 2px solid #30AE63;
 }
-
+.content__search_start:hover{
+  background-color: #30AE63;
+  border-radius: 0;
+  color:#FFFFFF;
+}
 
 
 
