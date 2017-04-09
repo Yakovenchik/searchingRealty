@@ -12,7 +12,7 @@
   display: block;
   margin: 10px 0;
   z-index: 1;
-  max-width: 80%;
+  max-width: 91%;
 }
 .selecter:focus {
   box-shadow: none;

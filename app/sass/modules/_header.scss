@@ -84,8 +84,8 @@
   height:380px;
 }
 .choose__city {
-  width: 40%;
-  //height: 300px;
+  width: 35%;
+  height: 100px;
 
   //&_select:hover {
   //  cursor: pointer;
@@ -133,6 +133,23 @@
 //.choose__city_selector{
 //  height: 300px;
 //}
+
+.choose__rooms{
+  height:100px;
+  width:248px;
+}
+
+
+
+
+.content__search_start{
+  height: 28px;
+  width:170px;
+  background-color: #FFFFFF;
+  color:#30ae63;
+  margin:28px 0px 0px 64px;
+  padding: 10px 0px 0px 30px;
+}
 
 
 
