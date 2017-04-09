@@ -156,7 +156,7 @@ table {
   width: 60px; }
 
 .content {
-  height: 180px;
+  height: 280px;
   padding: 44px 0px 0px 120px; }
 
 .content__title {
@@ -169,45 +169,7 @@ table {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  height: 100px; }
+  height: 380px; }
 
 .choose__city {
   width: 40%; }
-  .choose__city_select:hover {
-    cursor: pointer; }
-  .choose__city_select_wrapper {
-    width: 346px;
-    height: 42px;
-    margin-top: 11px;
-    position: relative; }
-  .choose__city_select_wrapper:after {
-    content: url("../../images/selectArrow.png");
-    right: 17px;
-    top: 11px;
-    position: absolute;
-    pointer-events: none; }
-  .choose__city_select_wrapper:focus {
-    content: url("../../images/selectArrow.png");
-    -webkit-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
-    right: 17px;
-    top: 11px;
-    position: absolute;
-    pointer-events: none; }
-  .choose__city_select {
-    width: 346px;
-    height: 42px;
-    -webkit-border-radius: 4px;
-            border-radius: 4px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    border: 2px solid #dfe3e6;
-    padding-left: 17px;
-    font: "Open Sans";
-    font-size: 14px; }
-
-.city_select_option {
-  width: 346px;
-  height: 42px; }

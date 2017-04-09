@@ -5,6 +5,12 @@
     <title>searchingRealty</title>
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.fs.selecter.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <link rel="stylesheet" href="css/jquery.fs.selecter.css" />
+    <script type="text/javascript" src="js/scripts.js"></script>
 </head>
 <body>
     <div class="page">
@@ -40,21 +46,14 @@
             </div>
             <div class="content">
                 <p class="content__title">Поиск недвижимости в Украине</p>
-                <form class="content__search">
+                <div class="content__search">
                     <div class="choose__city">
                         <p class="choose__city_title">Выберите город</p>
-                        <div class="choose__city_select_wrapper">
-                            <select class="choose__city_select">
-                                <option>
-                                    Москва
-                                </option>
-                                <option selected>
-                                    Киев
-                                </option>
-                                <option value="">Лондон</option>
-                                <option value="">Минск</option>
-                            </select>
-                        </div>
+                        <select name="choose__city_selector">
+                            <option value="1">Лондон</option>
+                            <option value="2">Берлин</option>
+                            <option value="3">Москва</option>
+                        </select>
                     </div>
                     <div class="choose__rooms">
                         <p class="choose-rooms-title">Кол-во комнат</p>
@@ -65,7 +64,7 @@
                     <a class="content__search_start">
                         Перейти к поиску
                     </a>
-                </form>
+                </div>
             </div>
         </div>
     </div>
