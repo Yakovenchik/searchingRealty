@@ -82,9 +82,10 @@ table {
           align-items: center;
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
-          justify-content: space-around; }
+          justify-content: space-around;
+  z-index: 1; }
   .realty_search_content {
-    height: 212px;
+    height: 216px;
     width: 327px;
     margin-right: 10px;
     padding: 5px 0px 0px 2px;
@@ -165,6 +166,77 @@ table {
           justify-content: center;
   -webkit-border-radius: 1px;
           border-radius: 1px; }
+
+.realty_search_content_select {
+  width: 100%;
+  margin-top: 13px;
+  height: 20px;
+  cursor: pointer; }
+
+.selectVisible {
+  width: 100%; }
+
+.select {
+  border: 2px solid #dfe3e6;
+  width: 323px;
+  height: 40px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative; }
+
+.colorOfMetro {
+  position: absolute;
+  height: 8px;
+  width: 8px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  left: 16px;
+  top: 40%; }
+
+.selectVisibleText {
+  position: absolute;
+  font-family: "Open Sans";
+  font-size: 12px;
+  left: 35px;
+  top: 43%; }
+
+.selectVisibleArrow {
+  position: absolute;
+  top: 48%;
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+  right: 15px; }
+
+.realty_search_content_select-item {
+  display: none;
+  width: 100%;
+  background-color: #FFFFFF;
+  border: 0;
+  z-index: 10;
+  position: relative; }
+
+.realty_search_content_select-item:last-child .selectItem {
+  border-bottom: 2px solid #30AE63; }
+
+.realty_search_content_select-item:hover {
+  background-color: #30AE63; }
+
+.realty_search_content_select-item a:hover {
+  color: #FFFFFF; }
+
+.selectItem {
+  width: 323px;
+  height: 40px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative; }
 
 .header {
   background: url(../../images/homepage-h.svg) no-repeat;
@@ -602,3 +674,19 @@ table {
 @media screen and (max-width: 500px) {
   .selecter {
     max-width: 100%; } }
+
+.red {
+  background-color: #E71D32; }
+
+.blue {
+  background-color: blue; }
+
+.green {
+  background-color: green; }
+
+.unvisible {
+  display: none; }
+
+.visible {
+  display: block;
+  z-index: 2; }
