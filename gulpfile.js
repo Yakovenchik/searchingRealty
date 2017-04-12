@@ -43,9 +43,6 @@ gulp.task('css-libs', ['sass'], function() {
 
 //убрал с watch сss-libs!!!
 
-
-
-
 gulp.task('watch', ['browser-sync','sass'], function() {
     gulp.watch('app/sass/**/*.scss', ['sass']); // Наблюдение за sass файлами в папке sass
     gulp.watch('app/js/*.js', browserSync.reload); // Наблюдение за js файлами в папке js

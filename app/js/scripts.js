@@ -1,3 +1,13 @@
+
+// class myClass{
+// 	sayHello(){
+// 		return "Hello asdfas";
+// 	}
+// }
+// var myClass = new Class();
+// document.getElementsByClassName("content__title").innerHTML=myClass.sayHello();
+
+
 $(document).ready(function(){
 	$(".choose__city_selector").selecter({
 		label: "Киев"
@@ -30,17 +40,19 @@ $(document).ready(function(){
 		
 	});
 	$(".realty_search_content_select-item").on("click",function () {
-		
+
+		var colorOfBranchMetro = {};
+		colorOfBranchMetro["Политехнический институт"] = "red";
+		colorOfBranchMetro["Шулявская"] = "red";
+		colorOfBranchMetro["Золотые ворота"] = "green";
+		colorOfBranchMetro["Лыбедская"] = "blue";
+		var selectedItem = $(this).text().trim();
+		for(var name in colorOfBranchMetro) {
+			var value = colorOfBranchMetro[name];
+			if(name==selectedItem){
+				$(".select .selectVisibleText").text(selectedItem);
+				$(".select .colorOfMetro").removeClass("red blue green").addClass(value);
+			}
+		}
 	});
-
-
-
-
-	//$(".main").on
-
-
-	// $(".selecter-selected").on("click",function () {
-	// 	alert("dsgdsgf");
-	// 	$(this).css("background", "url(\"./images/selectArrowOutwards.png no-repeat fixed\")");
-	// });
 });
