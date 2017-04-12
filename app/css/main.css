@@ -149,7 +149,7 @@ table {
 
 .realty_search_content_show {
   margin: 30px 0px 0px 5px;
-  width: 100%;
+  width: 95%;
   background-color: #30AE63;
   color: #FFFFFF;
   display: -webkit-box;
@@ -220,13 +220,8 @@ table {
   z-index: 10;
   position: relative; }
 
-.realty_search_content_select-item:last-child .selectItem {
-  border-bottom: 2px solid #30AE63; }
-
 .realty_search_content_select-item:hover {
-  background-color: #30AE63; }
-
-.realty_search_content_select-item a:hover {
+  background-color: #30AE63;
   color: #FFFFFF; }
 
 .selectItem {

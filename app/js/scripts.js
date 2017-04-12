@@ -21,23 +21,25 @@ $(document).ready(function(){
 		}
 	})
 	$(".select").on("click",function () {
-		if($(".select").hasClass("unchecked")) {
-			$(".realty_search_content_select-item").css("display", "block");
-			$(".select").removeClass("unchecked");
+		if($(this).hasClass("unchecked")) {
+			$(".realty_search_content_select-item").css("display", "block").css("border-left","2px solid #30AE63").css("border-right","2px solid #30AE63");
+			$(this).removeClass("unchecked");
 			$(".selectVisibleArrow").attr("src","images/selectArrowOutwards.png");
-			$(".select").css("border-top","2px solid #30AE63").css("border-left","2px solid #30AE63").css("border-right","2px solid #30AE63").
+			$(this).css("border-top","2px solid #30AE63").css("border-left","2px solid #30AE63").css("border-right","2px solid #30AE63").
 				css("border-radius",0);
+			$(".realty_search_content_select-item").last().css("border-bottom","2px solid #30AE63");
 		}
 		else{
 			$(".realty_search_content_select-item").css("display", "none");
-			$(".select").addClass("unchecked");
+			$(this).addClass("unchecked");
 			$(".selectVisibleArrow").attr("src","images/selectArrow.png");
-			$(".select").css("border-top","2px solid #dfe3e6").css("border-left","2px solid #dfe3e6").css("border-right","2px solid #dfe3e6").
+			$(this).css("border-top","2px solid #dfe3e6").css("border-left","2px solid #dfe3e6").css("border-right","2px solid #dfe3e6").
 			css("border-radius","3px");
 		}
 	});
-	$(".select").on("hover",function () {
-		
+	$(".realty_search_content_select-item").hover(function () {
+		$(".realty_search_content_select-item").css("border",0);
+		$(".select").css("border","2px solid #dfe3e6");
 	});
 	$(".realty_search_content_select-item").on("click",function () {
 
