@@ -117,6 +117,7 @@
   border: 0;
   z-index: 10;
   position: relative;
+  box-sizing: border-box;
 }
 .realty_search_content_select-item:hover{
   background-color: #30AE63;
