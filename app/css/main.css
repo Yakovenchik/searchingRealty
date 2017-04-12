@@ -5,7 +5,9 @@ body {
 .page {
   width: 1200px;
   margin: 0 auto;
-  margin-top: 18px; }
+  margin-top: 18px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 a {
   text-decoration: none; }
@@ -234,6 +236,68 @@ table {
       -ms-flex-align: center;
           align-items: center;
   position: relative; }
+
+.content__realty__offers {
+  width: 100%;
+  margin-top: 22px; }
+  .content__realty__offers_best {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #FFFFFF; }
+
+.offers__content_best {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.apartments {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+
+.content__title_best, .offers__best_footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font: "Open Sans";
+  color: #152935; }
+
+.content__title_best {
+  font-size: 24px;
+  color: #152935; }
+
+.offers__best_footer {
+  font-size: 16px;
+  border-top: 2px solid RGBA(90, 104, 114, 0.08);
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1); }
+  .offers__best_footer a {
+    color: #152935; }
 
 .header {
   background: url(../../images/homepage-h.svg) no-repeat;
