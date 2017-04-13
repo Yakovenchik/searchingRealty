@@ -133,25 +133,40 @@
 .content__realty__offers{
   //height:848px;
   width:100%;
-  margin-top: 22px;
-  &_best{
+  &_best, &_last{
     width:100%;
+    margin-top: 22px;
     display: flex;
     flex-direction: column;
     background-color: #FFFFFF;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    //height: 384px;
+  }
+  &_best{
     height: 384px;
   }
+  &_last{
+    height: 444px;
+  }
+
 }
-.offers__content_best{
-  width:95%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  height: 304px;
+.offers__content{
+  &_best, &_last {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &_best{
+    height: 304px;
+  }
+  &_last{
+    height:356px;
+  }
 }
 .apartments{
   //padding-top: 76px;
@@ -165,25 +180,24 @@
   justify-content: center;
   color: #152935;
   font-family: $font;
+  flex-wrap: wrap;
 }
 .content__title_best{
   font-size: 24px;
   color: #152935;
 }
 .offers__best_footer{
-  font-size: 16px;
   border-top: 2px solid RGBA(90, 104, 114, .08);
   box-shadow: 0px 1px 2px rgba(0,0,0,0.1);
   display: flex;
-  //flex-direction: row;
   justify-content: center;
   align-items: center;
   height: 40px;
   width: 100%;
-  //align-self: flex-end;
   a{
     color: #152935;
     font-family: $font;
+    font-size: 16px;
   }
 }
 .apartment{
@@ -221,6 +235,7 @@
   flex-direction: column;
   justify-content: space-between;
   width: 189px;
+  //width:100%;
   height: 73px;
 
   &_metro{
@@ -256,16 +271,37 @@
     }
   }
 }
-.metro-title{
+.metro-title, .metro-title_last{
   font-family: $font;
   font-size: 12px;
   color: #152935;
-  margin-left: 10px;
+  //margin-left: 10px;
 }
-.wrapper__offers__content_best{
-  width: 100%;
-  height: 344px;
+.metro-title{
+  margin-left: 10px;
+
+  &_last{
+    margin:0;
+  }
+}
+
+.wrapper__offers__content{
+  &_best, &_last{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &_best {
+    height: 344px;
+  }
+  &_last{
+    height:404px;
+  }
+}
+.content_menu{
+  width: 236px;
+  height: 28px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
 }

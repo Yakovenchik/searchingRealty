@@ -238,10 +238,10 @@ table {
   position: relative; }
 
 .content__realty__offers {
-  width: 100%;
-  margin-top: 22px; }
-  .content__realty__offers_best {
+  width: 100%; }
+  .content__realty__offers_best, .content__realty__offers_last {
     width: 100%;
+    margin-top: 22px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -260,10 +260,13 @@ table {
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
-            align-items: center;
+            align-items: center; }
+  .content__realty__offers_best {
     height: 384px; }
+  .content__realty__offers_last {
+    height: 444px; }
 
-.offers__content_best {
+.offers__content_best, .offers__content_last {
   width: 95%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -281,8 +284,13 @@ table {
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center;
+          align-items: center; }
+
+.offers__content_best {
   height: 304px; }
+
+.offers__content_last {
+  height: 356px; }
 
 .apartments {
   width: 100%;
@@ -306,14 +314,16 @@ table {
       -ms-flex-pack: center;
           justify-content: center;
   color: #152935;
-  font-family: "Open Sans"; }
+  font-family: "Open Sans";
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
 
 .content__title_best {
   font-size: 24px;
   color: #152935; }
 
 .offers__best_footer {
-  font-size: 16px;
   border-top: 2px solid RGBA(90, 104, 114, 0.08);
   -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
@@ -333,7 +343,8 @@ table {
   width: 100%; }
   .offers__best_footer a {
     color: #152935;
-    font-family: "Open Sans"; }
+    font-family: "Open Sans";
+    font-size: 16px; }
 
 .apartment {
   height: 228px;
@@ -448,15 +459,18 @@ table {
       color: #152935;
       font-size: 16px; }
 
-.metro-title {
+.metro-title, .metro-title_last {
   font-family: "Open Sans";
   font-size: 12px;
-  color: #152935;
-  margin-left: 10px; }
+  color: #152935; }
 
-.wrapper__offers__content_best {
+.metro-title {
+  margin-left: 10px; }
+  .metro-title_last {
+    margin: 0; }
+
+.wrapper__offers__content_best, .wrapper__offers__content_last {
   width: 100%;
-  height: 344px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -469,6 +483,24 @@ table {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
+
+.wrapper__offers__content_best {
+  height: 344px; }
+
+.wrapper__offers__content_last {
+  height: 404px; }
+
+.content_menu {
+  width: 236px;
+  height: 28px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 .header {
   background: url(../../images/homepage-h.svg) no-repeat;
@@ -493,7 +525,9 @@ table {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 25px; }
+  height: 25px;
+  font-family: "Open Sans";
+  font-size: 14px; }
 
 .left {
   width: 454px;
@@ -502,9 +536,6 @@ table {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
-
-.underline-white:hover {
-  border-bottom: 2px solid #FFFFFF; }
 
 .header_ovals {
   height: 20px;
@@ -913,6 +944,9 @@ table {
 .blue {
   background-color: blue; }
 
+.blueLight {
+  background-color: #2573D8; }
+
 .green {
   background-color: green; }
 
@@ -922,3 +956,18 @@ table {
 .visible {
   display: block;
   z-index: 2; }
+
+.underline-white:hover {
+  border-bottom: 2px solid #FFFFFF; }
+
+.underline-green:hover {
+  border-bottom: 2px solid #30AE63; }
+
+.black {
+  color: #152935; }
+
+.twoCheckMarks {
+  width: 138px; }
+
+.smaller {
+  width: 101px; }

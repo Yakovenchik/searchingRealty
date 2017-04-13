@@ -17,14 +17,13 @@
   margin-right: 44px;
   display: flex;
   height: 25px;
+  font-family: $font;
+  font-size: 14px;
   }
 .left{
   width: 454px;
   padding: 7px 0px 0px 47px;
   display: flex;
-}
-.underline-white:hover{
-  border-bottom:2px solid #FFFFFF;
 }
 .header_ovals{
   height: 20px;
