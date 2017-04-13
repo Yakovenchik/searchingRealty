@@ -251,10 +251,20 @@ table {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-color: #FFFFFF; }
+    background-color: #FFFFFF;
+    display: flex;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 384px; }
 
 .offers__content_best {
-  width: 100%;
+  width: 95%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -263,7 +273,16 @@ table {
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 304px; }
 
 .apartments {
   width: 100%;
@@ -271,9 +290,11 @@ table {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around; }
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 248px; }
 
 .content__title_best, .offers__best_footer {
   display: -webkit-box;
@@ -284,8 +305,8 @@ table {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font: "Open Sans";
-  color: #152935; }
+  color: #152935;
+  font-family: "Open Sans"; }
 
 .content__title_best {
   font-size: 24px;
@@ -295,9 +316,159 @@ table {
   font-size: 16px;
   border-top: 2px solid RGBA(90, 104, 114, 0.08);
   -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1); }
+          box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+  width: 100%; }
   .offers__best_footer a {
-    color: #152935; }
+    color: #152935;
+    font-family: "Open Sans"; }
+
+.apartment {
+  height: 228px;
+  width: 202px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .apartment__logo {
+    position: relative;
+    width: 202px;
+    height: 135px; }
+    .apartment__logo_ovals {
+      position: absolute;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      top: 15px;
+      right: 15px;
+      width: 3.96px;
+      height: 19.5px; }
+    .apartment__logo_oval {
+      width: 8px;
+      height: 8px;
+      -webkit-border-radius: 50px;
+      border-radius: 50px; }
+
+.apartment__info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 189px;
+  height: 73px; }
+  .apartment__info_metro {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 189px;
+    height: 17px; }
+  .apartment__info__numbers {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 122px;
+    height: 44px; }
+    .apartment__info__numbers_area {
+      color: #8C9BA5;
+      font-family: "Open Sans";
+      font-size: 12px; }
+    .apartment__info__numbers_price {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      width: 115px;
+      height: 24px; }
+    .apartment__info__numbers__price_suma {
+      font-family: "Open Sans";
+      color: #152935;
+      font-size: 16px; }
+
+.metro-title {
+  font-family: "Open Sans";
+  font-size: 12px;
+  color: #152935;
+  margin-left: 10px; }
+
+.wrapper__offers__content_best {
+  width: 100%;
+  height: 344px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .header {
   background: url(../../images/homepage-h.svg) no-repeat;
