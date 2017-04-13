@@ -88,57 +88,7 @@
 .choose__city {
   width: 35%;
   height: 100px;
-
-  //&_select:hover {
-  //  cursor: pointer;
-  //}
-  //&_select_wrapper{
-  //  width:346px;
-  //  height:42px;
-  //  margin-top: 11px;
-  //  position: relative;
-  //}
-  //&_select_wrapper:after{
-  //  content: url("../../images/selectArrow.png");
-  //  //-webkit-transform: rotate(90deg);
-  //  //-moz-transform: rotate(90deg);
-  //  //-ms-transform: rotate(90deg);
-  //  //transform: rotate(90deg);
-  //  right: 17px;
-  //  top: 11px;
-  //  position: absolute;
-  //  pointer-events: none;
-  //}
-  //&_select_wrapper:focus{
-  //  content: url("../../images/selectArrow.png");
-  //  -webkit-transform: rotate(90deg);
-  //  -moz-transform: rotate(90deg);
-  //  -ms-transform: rotate(90deg);
-  //  transform: rotate(90deg);
-  //  right: 17px;
-  //  top: 11px;
-  //  position: absolute;
-  //  pointer-events: none;
-  //}
-  //&_select{
-  //  width:346px;
-  //  height:$heightOfSelect;
-  //  border-radius: 4px;
-  //  -webkit-appearance: none;
-  //  -moz-appearance: none;
-  //  border: 2px solid #dfe3e6;
-  //  padding-left: 17px;
-  //  font: $font;
-  //  font-size: 14px;
-  //}
 }
-//.choose__city_selector{
-//  height: 300px;
-//}
-
-
-
-
 
 .choose__rooms{
   height:100px;
@@ -178,6 +128,15 @@
   color:#FFFFFF;
 }
 
+.select__header{
+  border:2px solid #dfe3e6;
+  width: 343px;
+  height: 40px;
+  border-radius: 3px;
+  align-items: center;
+  position: relative;
+  background-color: #FFFFFF;
+}
 
 
 

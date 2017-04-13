@@ -464,15 +464,14 @@
     display: inline-block;
     width: 14px;
     height: 14px;
-    //margin-right: 50px;
     position: absolute;
     left: 0px;
     bottom: 1px;
     background-color: #30AE63;
     border-radius: 50%;
-    //box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
   }
   input[type=radio]:checked + label:before {
+    position: absolute;
     content: "\2022";
     color: #f3f3f3;
     font-size: 40px;
