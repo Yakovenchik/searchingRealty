@@ -754,12 +754,33 @@ table {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
-  .content__switchers_item {
+  .content__switchers input[type=radio] {
+    display: none;
+    height: 14px; }
+  .content__switchers label {
+    display: inline-block;
+    height: 14px;
+    cursor: pointer;
+    position: relative;
+    padding-left: 15px; }
+  .content__switchers label:before {
+    content: "";
+    display: inline-block;
     width: 14px;
     height: 14px;
-    -webkit-border-radius: 50px;
-    border-radius: 50px;
-    background-color: #30AE63; }
+    position: absolute;
+    left: 0px;
+    bottom: 1px;
+    background-color: #30AE63;
+    -webkit-border-radius: 50%;
+            border-radius: 50%; }
+  .content__switchers input[type=radio]:checked + label:before {
+    content: "\2022";
+    color: #f3f3f3;
+    font-size: 40px;
+    text-align: center;
+    line-height: 14px;
+    border: 1px solid #30AE63; }
 
 .header {
   background: url(../../images/homepage-h.svg) no-repeat;
