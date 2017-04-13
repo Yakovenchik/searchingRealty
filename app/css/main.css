@@ -3,9 +3,9 @@ body {
   background-color: RGBA(90, 104, 114, 0.08); }
 
 .page {
-  width: 1200px;
+  width: 1129px;
   margin: 0 auto;
-  margin-top: 18px;
+  margin-top: 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
@@ -789,34 +789,62 @@ table {
   width: 100%;
   color: #FFFFFF;
   font-size: 14px;
-  font-family: "Open Sans"; }
-
-.header__menu {
-  width: 100%;
+  font-family: "Open Sans";
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 22px 0px 0px 123px; }
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.header__menu {
+  width: 100%;
+  height: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 .nav_link {
   color: #FFFFFF;
-  margin-right: 44px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   height: 25px;
   font-family: "Open Sans";
-  font-size: 14px; }
+  font-size: 14px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
-.left {
-  width: 454px;
-  padding: 7px 0px 0px 47px;
+.header__navigation {
+  width: 83.259%;
+  height: 30px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
 
 .header_ovals {
   height: 20px;
@@ -835,51 +863,51 @@ table {
   border-radius: 50px;
   margin: 5px 4px 0px 0px; }
 
-.right {
-  width: 320px;
-  height: 60px;
+.nav_register {
+  width: 33.482%;
+  height: 40px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-flex-wrap: nowrap;
-      -ms-flex-wrap: nowrap;
-          flex-wrap: nowrap;
-  margin: -3px 0px 0px 59px; }
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .shareAds {
   width: 236px;
+  height: 40px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: rgba(255, 255, 255, 0.1); }
-
-.shareAds_img {
-  height: 16px;
-  margin: auto 14px; }
-
-.shareAds_item {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex; }
-
-.shareAds_text {
-  margin: auto; }
+  .shareAds_img {
+    margin: 0px 13px 0px 15px; }
 
 .enter {
-  padding: 12px 0px 0px 15px;
-  width: 60px; }
+  height: 17.09px;
+  width: 46px; }
 
 .header_content {
-  height: 280px;
-  padding: 42px 0px 0px 122px; }
+  width: 100%;
+  height: 145px; }
 
 .content__title {
   font-size: 32px;
@@ -961,6 +989,45 @@ table {
           align-items: center;
   position: relative;
   background-color: #FFFFFF; }
+
+.header_wrapper {
+  width: 78.830%;
+  height: 245px;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.nav_wrapper {
+  width: 51.011%;
+  height: 35px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
 
 /* 
  * Selecter v3.2.3 - 2014-10-24 
