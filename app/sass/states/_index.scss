@@ -51,3 +51,33 @@
     color: #2573D8;
   }
 }
+.footer{
+  &_metrovka{
+    height:184px;
+  }
+  &_contacts{
+    height:210px;
+  }
+  &_partnership{
+    height:152px;
+  }
+  &_getMore{
+    height: 168px;
+  }
+  &_button{
+    border:0;
+    height: 40px;
+    width:100%;
+  }
+}
+.street, .city{
+  line-height: 20px;
+  font-family: $font;
+  color: #152935;
+}
+.city{
+  font-size: 11px;
+}
+.street{
+  font-size: 13px;
+}
