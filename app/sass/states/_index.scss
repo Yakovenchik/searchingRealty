@@ -36,3 +36,18 @@
   width:100%;
   height: 182px;
 }
+.largeCircle{
+  width: 8px;
+  height: 8px;
+}
+.metrovka{
+  &_green{
+    color: #30AE63;
+  }
+  &_violet{
+    color: #BA8FF7;
+  }
+  &_blue{
+    color: #2573D8;
+  }
+}
