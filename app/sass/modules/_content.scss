@@ -121,7 +121,9 @@
 }
 .realty_search_content_select-item:hover{
   background-color: #30AE63;
-  color: #FFFFFF;
+  div p {
+    color: #FFFFFF;
+  }
 }
 .selectItem{
     width: 323px;
