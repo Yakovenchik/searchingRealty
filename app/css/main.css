@@ -1520,3 +1520,7 @@ table {
 
 .smaller {
   width: 101px; }
+
+.largePicture {
+  width: 100%;
+  height: 182px; }
