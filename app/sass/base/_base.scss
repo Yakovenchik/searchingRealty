@@ -4,13 +4,17 @@ body{
   background-color: RGBA(90, 104, 114, .08);
 }
 .page{
-  width:1129px;
   margin:0 auto;
   margin-top: 15px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media(min-width: 360px) and (max-width: 1280px){
+  .page{
+    width: 100%
+}
 }
 a{
   text-decoration: none;
