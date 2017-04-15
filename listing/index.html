@@ -7,37 +7,40 @@
 	</head>
 	<body>
 		<div class="page">
-        <header class="header">
-            <div class="header__menu">
-                <div>
-                    <a class="header__menu_icon" href="../index.html"><img src="./../images/Combined%20Shape.svg" alt="Icon"></a>
-                </div>
-                <div class="left">
-                            <a class="nav_link underline" href="#">Аренда</a>
-                            <a class="nav_link underline" href="#">Продажа</a>
-                            <a class="nav_link underline" href="#">Посуточно</a>
-                            <a class="nav_link underline" href="#">
-                                    <div class="header_ovals" >
-                                        <div class="header_oval"></div>
-                                        <div class="header_oval"></div>
-                                        <div class="header_oval"></div>
-                                    </div>
-                                    <div class="header_text">
-                                        <p>Еще</p>
-                                    </div>
+         <div class="header">
+            <div class="header_wrapper">
+                <div class="header__menu">
+                    <div class="nav_wrapper">
+                        <a class="header__menu_icon" href="#"><img src="../images/Combined%20Shape.svg" alt="Icon"></a>
+                        <div class="header__navigation">
+                            <a class="nav_link underline-white" href="#">Аренда</a>
+                            <a class="h_hidden nav_link underline-white" href="#">Продажа</a>
+                            <a class="h_hidden nav_link underline-white" href="#">Посуточно</a>
+                            <a class="h_hidden nav_link underline-white" href="#">
+                                <div class="h_hidden header_ovals" >
+                                    <div class="header_oval"></div>
+                                    <div class="header_oval"></div>
+                                    <div class="header_oval"></div>
+                                </div>
+                                <div class="header_text">
+                                    <p>Еще</p>
+                                </div>
                             </a>
-                </div>
-                <div class="right">
-                    <a class="button shareAds">
-                        <div class="shareAds_item">
-                            <img class="shareAds_img" src="./../images/Shape.png" alt="+">
-                            <p class="shareAds_text">Pазместить обьявление</p>
                         </div>
-                    </a>
-                    <a class="button enter">Войти</a>
+                    </div>
+                    <div class="h_hidden nav_register">
+                            <a class="shareAds">
+                                <img class="shareAds_img" src="../images/Shape.png" alt="+">
+                                <p class="shareAds_text">Pазместить обьявление</p>
+                            </a>
+                        <a class="button enter">Войти</a>
+                    </div>
+                    <div class = "h_rehidden">
+                        <a src = "menu" href="#"><img src = "./images/menu.png"></a>
+                    </div>
                 </div>
-            </div>
-        </header>
+              </div>
+        </div>
 			<div class = "content list">
 			 	<div class = "leftpart">
 					<div>
@@ -169,54 +172,74 @@
 						</div>
 					</div>
 				</div>
-				<div class = "rightpart">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2540.633156649982!2d30.52050781284806!3d50.44793334168823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1492193149288" width="350" height="591" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<div class = "c_hidden rightpart">
+					<iframe class = "c_hidden" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2540.633156649982!2d30.52050781284806!3d50.44793334168823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1492193149288" width="350" height="591" frameborder="0" allowfullscreen></iframe>
 				</div>
 			</div>
-		<footer class = "footer">
-			<div class = "list">
-					<div class = "footer_metrovarkacolumn">
-				  	<h4 class = "footer_listtitle">Metrovarka</h4>
-				  	<ul>
-				  		<li><a href = "#">О компании</a></li>
-				  		<li><a href = "#">Пресса о нас</a></li>
-				  		<li><a href = "#">Пользовательское решение</a></li>
-				  		<li><a href = "#">Карта сайта</a></li>
-				  		<li><a href = "#">Помощь</a></li>
-						</ul>
-					</div>
-					<div class = "footer_partnershipcolumn">
-						<h4 class = "footer_listtitle">Партнерство</h4>
-						<ul>
-				  		<li><a href = "#">Как разместить объявление</a></li>
-				  		<li><a href = "#">Инструменты продвижения</a></li>
-				  		<li><a href = "#">Правила заполнения объявления</a></li>
-						</ul>
-					</div>
-					<div class = "footer_morecolumn">
-						<h4 class = "footer_listtitle">Узнайте больше</h4>
-						<ul>
-				  		<li><a href = "#">Бонусная программа Bonus+</a></li>
-				  		<li><a href = "#">Telegram Metrovarka Bot</a></li>
-				  		<li><a href = "#">Как работает поиск</a></li>
-				  		<li><a href = "#">Как пользоваться избранным</a></li>
-				  	</ul>
-				  </div>
-				  <div class = "footer_contactcolumn">
-						<h4 class = "footer_listtitle">Контакты</h4>
-						<ul>
-				  		<li>
-				  			<a href = ""><img src = "../images/facebook.png" alt = "fb"></a>
-								<a href = ""><img src = "../images/vk.png" alt = "vk"></a>
-								<a href = ""><img src = "../images/instagram.png" alt = "inst"></a>
-				  		</li>
-				  		<li>ул. Жилянская, 37 Киев 01033</li>
-				  		<li><a href = "#">info@metrovarka.ua</a></li>
-				  		<li><a class = "footer_apply button" href = "#">Оставить заявку</a></li>
-						</ul>
-					</div>
-				</div>	
-				<a href = "../index.html" alt = "Metrovarka"><img class = "footer_logo" src = "./../images/logo_foot.png" alt = "Metrovarka"></a>
-		</footer>
+		
+        <div class="footer">
+            <div class="footer__content">
+                <div class="footer__content__item">
+                    <div class="footer__content__item_title">
+                        <p>
+                            Metrovka
+                        </p>
+                    </div>
+                    <ol class="footer__content__item_navigation footer_metrovka">
+                        <li><a class="footer__content__item_navigation_item" href="">О компании</a></li>
+                        <li><a class="footer__content__item_navigation_item" href="">Пресса о нас</a></li>
+                        <li><a class="footer__content__item_navigation_item" href="">Пользовательское соглашение</a></li>
+                        <li><a class="footer__content__item_navigation_item" href="">Карта сайта</a></li>
+                        <li><a class="footer__content__item_navigation_item" href="">Помощь</a></li>
+                    </ol>
+                </div>
+                <div class="footer__content__item">
+                    <div class="footer__content__item_title">
+                        <p>
+                            Партнерство
+                        </p>
+                    </div>
+                    <ol class="footer__content__item_navigation  footer_partnership">
+                        <li><a class="footer__content__item_navigation_item" href="">Как разместить обьявление</a></li>
+                        <li><a class="footer__content__item_navigation_item" href="">Инструменты продвижения</a></li>
+                        <li><a class="footer__content__item_navigation_item" href="">Правила заполнения объявлений</a></li>
+                    </ol>
+                </div>
+                <div class="footer__content__item">
+                    <div class="footer__content__item_title">
+                        <p>
+                            Узнайте больше
+                        </p>
+                    </div>
+                    <ol class="footer__content__item_navigation  footer_getMore">
+                        <li><a class="footer__content__item_navigation_item" href="">Бонусная программа Bonus+</a></li>
+                        <li><a class="footer__content__item_navigation_item" href="">Telegram Metrovka Bot</a></li>
+                        <li><a class="footer__content__item_navigation_item" href="">Как работает поиск</a></li>
+                        <li><a class="footer__content__item_navigation_item" href="">Как пользоваться избранным</a></li>
+                    </ol>
+                </div>
+                <div class="footer__content__item">
+                    <div class="footer__content__item_title">
+                        <p>
+                            Контакти
+                        </p>
+                    </div>
+                    <div class="footer__content__item_networks">
+                        <a href=""><img src="./images/facebook.svg" alt="facebook"></a>
+                        <a href=""><img src="./images/vk.svg" alt="vk"></a>
+                        <a href=""><img src="./images/instagram.svg" alt="instagram"></a>
+                    </div>
+                    <div class="footer__content__item__info">
+                        <div class="footer__content__item__info_address">
+                            <p class="street">ул. Жилянская, 37</p>
+                            <p class="city">Киев, 01033</p>
+                        </div>
+                        <p class="street">info@metrovka.ua</p>
+                        <a class="footer_apply button" href="#">Оставить заявку</a>
+                    </div>
+                </div>
+            </div>
+            <img src="../images/metrovkaFooterLogo.svg" alt="metrovka_logo">
+        </div>
 	</div>
 </body>

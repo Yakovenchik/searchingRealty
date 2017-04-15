@@ -896,6 +896,12 @@ table {
             font-family: "Open Sans"; } }
 
 @media (min-width: 890px) {
+  .rehidden {
+    display: none !important;
+    visibility: hidden;
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0); }
   .content {
     width: 890px;
     height: 2607px;
@@ -1874,8 +1880,8 @@ table {
 
 .header {
   background-color: #30AE63;
-  width: 890px;
-  height: 301px;
+  width: 1200px;
+  padding: 20px;
   color: #FFFFFF;
   font-size: 14px;
   font-family: "Open Sans";
@@ -1917,6 +1923,7 @@ table {
 
 .header__navigation {
   height: 30px;
+  width: 83.259%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1952,6 +1959,7 @@ table {
 
 .nav_register {
   height: 40px;
+  width: 35%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1992,7 +2000,6 @@ table {
   width: 46px; }
 
 .header_content {
-  height: 145px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2017,7 +2024,6 @@ table {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 66px;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
@@ -2029,6 +2035,7 @@ table {
 
 .choose__city {
   height: 66px;
+  width: 38.651%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2098,6 +2105,7 @@ table {
 .content__search_start {
   background-color: #FFFFFF;
   color: #30ae63;
+  width: 22.584%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2136,6 +2144,7 @@ table {
 
 .header_wrapper {
   height: 245px;
+  width: 78.830%;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
@@ -2155,6 +2164,7 @@ table {
 
 .nav_wrapper {
   height: 35px;
+  width: 51.011%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2216,28 +2226,36 @@ table {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
-@media (min-width: 360px) and (max-width: 890px) {
+@media (max-width: 890px) {
   .header, .header__menu, .header_content,
   .content__search, .select__header,
   .choose__city__content_select-item,
   .selectItem_header, .choose__city__content_select {
-    width: 100%; } }
+    width: 100%; }
+  .h_hidden {
+    display: none !important;
+    visibility: hidden;
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0); }
+  .content_search {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
 
-@media (min-width: 360px) {
-  .header__navigation {
-    width: 83.259%; }
-  .nav_register {
-    width: 33.482%; }
-  .choose__city {
-    width: 38.651%; }
-  .choose__rooms {
-    width: 29.775%; }
-  .content__search_start {
-    width: 22.584%; }
-  .header_wrapper {
-    width: 78.830%; }
-  .nav_wrapper {
-    width: 51.011%; } }
+@media (min-width: 890px) {
+  .h_rehidden {
+    display: none !important;
+    visibility: hidden;
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0); } }
 
 /* 
  * Selecter v3.2.3 - 2014-10-24 

@@ -10,6 +10,8 @@
 .content_realty{
   //height:1163px;
 }
+.rehidden{
+}
 .hidden{
     display: none !important;
     visibility: hidden;
@@ -567,6 +569,11 @@
   
 }
 @media(min-width: 890px){
+  .rehidden{
+    display: none !important;
+    visibility: hidden;
+    transform: scale(0);
+}
   .content{
   width:890px;
   height:2607px;

@@ -1,26 +1,37 @@
 @import "../utilities/_index";
 .header{
   background-color: #30AE63;
-  width: 100%;
+  width: 1200px;
+  //background:url(../../images/homepage-h.svg) no-repeat;
+  //height: 301px;
+  padding: 20px;
   color: $header_color;
   font-size: 14px;
   font-family: $font;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .header__menu{
-    width: 100%;
+    height:40px;
     display: flex;
-    padding: 20px 0px 0px 123px;
+    justify-content: space-between;
 }
 .nav_link{
   color: $header_color;
-  margin-right: 44px;
   display: flex;
   height: 25px;
+  font-family: $font;
+  font-size: 14px;
+  box-sizing: border-box;
   }
-.left{
-  width: 454px;
-  padding: 7px 0px 0px 48px;
+.header__navigation{
+  height: 30px;
+  width: 83.259%;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .header_ovals{
   height: 20px;
@@ -38,32 +49,89 @@
   margin: 5px 4px 0px 0px;
 }
 
-.right{
-  width:320px;
-  height:60px;
+.nav_register{
+  height:40px;
+  width:35%;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  margin: -4px 0px 0px 56px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .shareAds{
   width:236px;
+  height: 40px;
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
   background-color: rgba(255,255,255,0.1);
+  &_img{
+    margin: 0px 13px 0px 15px;
+  }
+}
+
+.enter{
+  height:17.09px;
+  width:46px;
+}
+
+.header_wrapper{
+ // height: 245px;
+  width:78.830%;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.nav_wrapper{
+  height: 35px;
+  width: 51.011%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+.h_rehidden{
+    display: none !important;
+    visibility: hidden;
+    transform: scale(0);
+}
+.h_hidden{
+}
+@media(max-width: 890px){
+  .header,.header__menu,.header_content,
+  .content__search,.select__header,
+  .choose__city__content_select-item,
+  .selectItem_header,.choose__city__content_select{
+    width: 100%;
+  }
+.h_rehidden{
 
 }
-.shareAds_img{
-  height: 16px;
-  margin: auto 14px;
+.h_hidden{    
+    display: none !important;
+    visibility: hidden;
+    transform: scale(0);
 }
-.shareAds_item{
-  display: flex;
 }
-.shareAds_text{
-  margin: auto;
+@media(min-width: 890px) and (max-width: 1200px){
+    .header,.header__menu,.header_content,
+  .content__search,.select__header,
+  .choose__city__content_select-item,
+  .selectItem_header,.choose__city__content_select{
+    width: 100%;
+  }
+.h_rehidden{
+    display: none !important;
+    visibility: hidden;
+    transform: scale(0);
 }
-.enter{
-  padding:15px 0px 0px 15px;
-  width:60px;
+.h_hidden{
 }
+}
+
+
+
+
+
+

@@ -73,18 +73,30 @@ li{
 .moveright{
 	padding-left: 300px;
 }
-.rightpart{
-  margin-top: 110px;
-  width: 20%;
-  height: 594px;
+@media(min-width:1200px){
+  .rightpart{
+    margin-top: 110px;
+    width: 20%;
+    height: 594px;
+  }
+   .c_hidden{
+  }
 }
-@media(min-width: 360px) and (max-width:890px){
+@media(max-width:1200px){
   .rightpart{
     width: 0%;
   }
-  .leftpart{
+    .leftpart{
     width: 100%;
   }
+  .c_hidden{
+    display: none !important;
+    visibility: hidden;
+    transform: scale(0);
+  }
+}
+@media(min-width: 360px) and (max-width:890px){
+
   .whiteback{
   margin-bottom: 5px;
   }

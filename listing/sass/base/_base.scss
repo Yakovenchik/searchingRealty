@@ -13,10 +13,7 @@ body{
 		width:auto;
 	}
 }
-@media(min-width: 360px) and (max-width:1000px){
-      display:auto;
-  }
-@media(min-width: 1000px){
+@media(min-width: 890px){
     .list{
       display: flex;
     }
