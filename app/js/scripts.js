@@ -1,10 +1,19 @@
 $(document).ready(function(){
 	$(".choose__rooms_item").on("click",function () {
-		if($(".choose__rooms_item").hasClass("checked")){
+		if($(this).hasClass("checked")){
 			$(this).css("background-color", "transparent").css("color", "#FFFFFF").removeClass("checked");
 		}
 		else{
 			$(this).css("background-color", "#FFFFFF").css("color", "#152935").addClass("checked");
+		}
+	});
+
+	$(".modal_item").on("click",function () {
+		if($(this).hasClass("checked")){
+			$(this).css("background-color", "transparent").css("color", "#152935").removeClass("checked").css("border","2px solid #DFE3E6");
+		}
+		else{
+			$(this).css("background-color", "#30AE63").css("color", "#FFFFFF").addClass("checked").css("border","2px solid #30AE63");
 		}
 	});
 
@@ -115,9 +124,12 @@ $(document).ready(function(){
 		css("border-radius","3px");
 	});
 
-
 	$(".footer_button").bind("click",function (e) {
 			e.preventDefault();
 			$('body,html').animate({scrollTop: 0}, 500);
+			$(".windowForModal").css("display","block");
+	});
+	$(".modal_leaveApplication, .modal_closeButton").on("click",function () {
+		$(".windowForModal").css("display","none");
 	});
 });

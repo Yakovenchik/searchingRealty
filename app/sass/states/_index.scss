@@ -81,3 +81,9 @@
 .street{
   font-size: 13px;
 }
+.modal_menu{
+  justify-content: initial;
+  &_margin{
+    margin-right: 40px;
+  }
+}
