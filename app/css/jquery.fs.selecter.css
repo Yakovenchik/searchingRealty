@@ -13,6 +13,7 @@
   margin: 10px 0;
   z-index: 1;
   max-width: 91%;
+
 }
 .selecter:focus {
   box-shadow: none;
@@ -73,11 +74,6 @@
   right: 15px;
   bottom: 0;
   background: url(../images/selectArrow.png);
-  /*-moz-transform: rotate(180deg); !* Для Firefox *!*/
-  /*-ms-transform: rotate(180deg); !* Для IE *!*/
-  /*-webkit-transform: rotate(180deg); !* Для Safari, Chrome, iOS *!*/
-  /*-o-transform: rotate(180deg); !* Для Opera *!*/
-  /*transform: rotate(180deg);*/
   content: '';
   display: block;
   margin: auto 0;
